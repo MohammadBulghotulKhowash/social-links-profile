@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-VariableFont_slnt\wght.ttf);
+}
+
+:root {
+  --primary: hsl(0, 0%, 20%);
+  --secondary: hsl(75, 94%, 57%);
+  --text-color-primary: hsl(0, 0%, 100%);
+  --bg-color-primary: hsl(0, 0%, 8%);
+  --bg-color-secondary: hsl(0, 0%, 12%);
+}
+
+*,
+::before,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-color-primary);
+}
+
+main .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 70px; */
+  margin: 50px;
+}
+
+div .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: var(--bg-color-secondary);
+  color: var(--text-color-primary);
+  width: 350px;
+  height: 550px;
+}
+
+div.content .profile-image img {
+  /* border: 5px solid black; */
+  width: 70px;
+  border-radius: 50%;
+  margin-block-start: 30px;
+}
+
+div.content .name {
+  margin-block-start: 20px;
+  font-weight: 700;
+}
+
+div.content .adress p {
+  font-weight: 600;
+  margin-block-start: 10px;
+  color: var(--secondary);
+}
+
+div.content .profession {
+  margin-block-start: 20px;
+  font-size: 14px;
+}
+
+div .content .toggle-button {
+  display: flex;
+  flex-direction: column;
+  margin-block: 20px;
+}
+
+div.content .toggle-button button {
+  margin-block-end: 10px;
+  color: var(--text-color-primary);
+  font-weight: 700;
+  background-color: var(--primary);
+  border-radius: 10px;
+  width: 280px;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+}
+
+div.content .toggle-button button:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+  transition: all 0.2s ease-in-out;
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--text-color-primary);
+}
+footer .attribution a {
+  color: var(--secondary);
+  padding-block: 20px;
+}
+
+/* Responsive */
+/* Mobile */
+@media screen and (max-width: 375px) {
+  div.content {
+    height: 480px;
+    width: 280px;
+  }
+
+  div.content .profile-image img {
+    width: 75px;
+  }
+
+  div.content .name h2 {
+    font-size: 20px;
+  }
+
+  div.content .adress p {
+    font-size: 13px;
+  }
+
+  div.content .profession {
+    font-size: 11px;
+  }
+
+  div.content .toggle-button button {
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+  div.content {
+    height: 750px;
+    width: 550px;
+  }
+
+  div.content .profile-image img {
+    width: 150px;
+  }
+
+  div.content .name h2 {
+    font-size: 40px;
+  }
+
+  div.content .adress p {
+    font-size: 26px;
+  }
+
+  div.content .profession {
+    font-size: 22px;
+  }
+
+  div.content .toggle-button button {
+    width: 430px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+}
