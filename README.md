@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL here](https://your-solution-url.com)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/resposive-social-link-profile-using-flexbox-fIlJyaxMX5)
 - Live Site URL: [live site URL here](https://mohammadbulghotulkhowash.github.io/social-links-profile.github.io/)
 
 ## My process
